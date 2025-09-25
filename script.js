@@ -1,36 +1,19 @@
-// GSAP ScrollTrigger Animations
-gsap.registerPlugin(ScrollTrigger);
+<h1 id="greet">Hello 🌸</h1>
+<button id="clickMe">Click Me 💖</button>
 
-// Memory Sections Animations
-gsap.from("#memory1 h2", {
-    scrollTrigger: "#memory1",
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    delay: 0.3
-});
+<script>
+  // Animated greetings
+  const greetings = ["Hello 🌸", "Welcome 💖", "Hi there 🐰"];
+  let i = 0;
+  setInterval(() => {
+    document.getElementById("greet").textContent = greetings[i];
+    i = (i + 1) % greetings.length;
+  }, 2000);
 
-gsap.from("#memory2 h2", {
-    scrollTrigger: "#memory2",
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    delay: 0.3
-});
-
-gsap.from("#memory3 h2", {
-    scrollTrigger: "#memory3",
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    delay: 0.3
-});
-
-// Love Quote Animation
-gsap.from("#loveNote .quote", {
-    scrollTrigger: "#loveNote",
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    delay: 0.3
-});
+  // Button click cute animation
+  const btn = document.getElementById("clickMe");
+  btn.addEventListener("click", () => {
+    btn.textContent = "Yay! 💕";
+    setTimeout(() => btn.textContent = "Click Me 💖", 1000);
+  });
+</script>
