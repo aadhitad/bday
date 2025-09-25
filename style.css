@@ -1,78 +1,84 @@
-/* General Styles */
+/* Body & Background */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    overflow-x: hidden;
+  background: linear-gradient(135deg, #FFD1DC, #FFC0CB);
+  font-family: 'Comic Neue', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', serif;
+/* All containers rounded */
+.container, .card, header, footer {
+  border-radius: 25px;
+  background-color: #fff0f6;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 10px 20px rgba(255,182,193,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-header {
-    background-color: #ffcccb;
-    text-align: center;
-    padding: 50px 0;
+.container:hover, .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(255,105,180,0.4);
 }
 
-header h1 {
-    font-size: 3.5em;
+/* Buttons */
+button {
+  background-color: #FFB6C1;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Comic Neue', sans-serif;
+  box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-header p {
-    font-size: 1.5em;
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(255,105,180,0.5);
 }
 
-/* Section Styles */
-section {
-    height: 100vh; /* Full screen height for each section */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    position: relative;
+/* Links */
+a {
+  color: #FF69B4;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: transform 0.2s, background 0.2s;
 }
 
-section:nth-child(even) {
-    background-color: #f1f1f1;
+a:hover {
+  transform: scale(1.05);
+  background-color: #ffe0eb;
 }
 
-.content {
-    text-align: center;
-    max-width: 600px;
+/* Inputs */
+input, textarea {
+  border-radius: 20px;
+  border: 1px solid #FFB6C1;
+  padding: 10px;
+  outline: none;
 }
 
-h2 {
-    font-size: 2.5em;
-    color: #b63434;
-    opacity: 0;
+input:focus, textarea:focus {
+  border-color: #FF69B4;
+  box-shadow: 0 0 10px rgba(255,105,180,0.3);
 }
 
-p {
-    font-size: 1.2em;
-    color: #555;
+/* Cards / Info blocks */
+.card {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  background: #fff0f6;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(255,105,180,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Love Quote Styling */
-#loveNote {
-    background-color: #ffcccb;
-    text-align: center;
-}
-
-.quote {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #b63434;
-    opacity: 0;
-    font-style: italic;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
+.card:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 15px 25px rgba(255,105,180,0.4);
 }
