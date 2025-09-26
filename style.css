@@ -1,24 +1,64 @@
-/* Body & Background */
 body {
   background: linear-gradient(135deg, #FFD1DC, #FFC0CB);
-  font-family: 'Comic Neue', sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #5a2a5c;
 }
 
-/* All containers rounded */
-.container, .card, header, footer {
-  border-radius: 25px;
-  background-color: #fff0f6;
+.container {
+  max-width: 900px;
+  margin: auto;
   padding: 20px;
-  margin: 10px;
-  box-shadow: 0 10px 20px rgba(255,182,193,0.3);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 40px;
+  background: #fff0f6;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+}
+
+header h1 {
+  font-family: 'Parisienne', cursive;
+  font-size: 3em;
+  margin: 0;
+  color: #b93a70;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #8a3c6c;
+}
+
+/* Cards */
+.card {
+  background-color: #fff0f6;
+  border-radius: 30px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 8px 20px rgba(255,105,180,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.container:hover, .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 25px rgba(255,105,180,0.4);
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 25px rgba(255,105,180,0.3);
+}
+
+.card h2 {
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  color: #b93a70;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 
 /* Buttons */
@@ -30,7 +70,7 @@ button {
   color: white;
   font-weight: bold;
   cursor: pointer;
-  font-family: 'Comic Neue', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   box-shadow: 0 5px 15px rgba(255,105,180,0.3);
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -40,45 +80,11 @@ button:hover {
   box-shadow: 0 10px 20px rgba(255,105,180,0.5);
 }
 
-/* Links */
-a {
-  color: #FF69B4;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 5px 10px;
-  transition: transform 0.2s, background 0.2s;
-}
-
-a:hover {
-  transform: scale(1.05);
-  background-color: #ffe0eb;
-}
-
-/* Inputs */
-input, textarea {
-  border-radius: 20px;
-  border: 1px solid #FFB6C1;
-  padding: 10px;
-  outline: none;
-}
-
-input:focus, textarea:focus {
-  border-color: #FF69B4;
-  box-shadow: 0 0 10px rgba(255,105,180,0.3);
-}
-
-/* Cards / Info blocks */
-.card {
-  width: 250px;
+/* Footer */
+footer {
   text-align: center;
-  padding: 20px;
-  background: #fff0f6;
-  border-radius: 30px;
-  box-shadow: 0 8px 20px rgba(255,105,180,0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05) rotate(-1deg);
-  box-shadow: 0 15px 25px rgba(255,105,180,0.4);
+  padding: 30px 20px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #8a3c6c;
 }
