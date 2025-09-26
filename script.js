@@ -1,19 +1,16 @@
-<h1 id="greet">Hello 🌸</h1>
-<button id="clickMe">Click Me 💖</button>
+// Animated greetings
+const greetings = ["Happy Birthday! 🎀", "Welcome 💖", "Hi there 🌸"];
+let i = 0;
 
-<script>
-  // Animated greetings
-  const greetings = ["Hello 🌸", "Welcome 💖", "Hi there 🐰"];
-  let i = 0;
-  setInterval(() => {
-    document.getElementById("greet").textContent = greetings[i];
-    i = (i + 1) % greetings.length;
-  }, 2000);
+setInterval(() => {
+  document.getElementById("greet").textContent = greetings[i];
+  i = (i + 1) % greetings.length;
+}, 2000);
 
-  // Button click cute animation
-  const btn = document.getElementById("clickMe");
-  btn.addEventListener("click", () => {
-    btn.textContent = "Yay! 💕";
-    setTimeout(() => btn.textContent = "Click Me 💖", 1000);
-  });
-</script>
+// Cute button click animation
+const btn = document.getElementById("btn1");
+btn.addEventListener("click", () => {
+  const original = btn.textContent;
+  btn.textContent = "Yay! 💕";
+  setTimeout(() => btn.textContent = original, 1000);
+});
