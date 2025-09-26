@@ -6,53 +6,48 @@
   <title>Happy Birthday, [Her Name]!</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Sacramento&family=Parisienne&family=Quicksand&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- GSAP for animations -->
+  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Happy Birthday, [Her Name]!</h1>
-        <p>Scroll down to celebrate our love ❤️</p>
-    </header>
+  <header>
+    <h1 id="greet">Happy Birthday, [Her Name]!</h1>
+    <p>Scroll down to celebrate our love ❤️</p>
+  </header>
 
-    <section id="memory1">
-        <div class="content">
-            <h2>Our First Meeting</h2>
-            <p>It all started at [place]...</p>
-        </div>
+  <div class="container">
+    <section id="memory1" class="card">
+      <h2>Our First Meeting</h2>
+      <p>It all started at [place]...</p>
     </section>
 
-    <section id="memory2">
-        <div class="content">
-            <h2>Our First Date</h2>
-            <p>We had an amazing time at [place]. A memory I’ll never forget.</p>
-        </div>
+    <section id="memory2" class="card">
+      <h2>Our First Date</h2>
+      <p>We had an amazing time at [place]. A memory I’ll never forget.</p>
     </section>
 
-    <section id="memory3">
-        <div class="content">
-            <h2>Our Favorite Trip Together</h2>
-            <p>Traveling to [place] was an adventure that will always be in my heart!</p>
-        </div>
+    <section id="memory3" class="card">
+      <h2>Our Favorite Trip Together</h2>
+      <p>Traveling to [place] was an adventure that will always be in my heart!</p>
     </section>
 
-    <section id="loveNote">
-        <div class="content">
-            <p class="quote">“You are my sunshine, my only sunshine.” 🌞</p>
-        </div>
+    <section id="loveNote" class="card">
+      <p class="quote">“You are my sunshine, my only sunshine.” 🌞</p>
     </section>
 
-    <footer>
-        <p>Love, [Your Name]</p>
-    </footer>
+    <button id="btn1">Click Me 🎀</button>
+  </div>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>Love, [Your Name]</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
